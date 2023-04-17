@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spiral</title>
+
+    <link rel="stylesheet" href="./css/bootstrap/bootstrap.min.css">
+    <script src="./js/bootstrap/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/pay.css">
+
+    <!-- Start font fontawesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- End fontawesome -->  
+    
+</head>
+<body>
+    <header class="header pay-header">
+        <a href="#" class="logo">
+          <img src="./img/LTC.png" alt="" srcset="">
+        </a>
+        <div class="mean-toggle"></div>
+        <nav>
+            <ul>
+                <li><a href="index.html">الرئيسية</a></li>
+                <li><a href="courses.html">الدورات</a></li>
+                <li><a href="#">سجل الاَن</a></li>
+                <li><a href="#">دخول</a></li>
+                <li class="nav-search">
+                  <input class="form-control me-2 nav-search-icon bordred" type="search">
+                </li>
+            </ul>
+        </nav>
+        <div class="clear"></div>
+      </header>
+
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="pay">
+              <h4 class="speciall--heading">الدفع</h4>
+              <div class="pay__content">
+                <form action="" name="form--pay">
+                  <p>رقم الهاتف</p>
+                  <input type="text" class="form__number" name="number" />
+                  <p>اختر طريقة الدفع</p>
+                  <div class="form__check">
+                    <div class="form__check-right">
+                      <input
+                        id="ban"
+                        type="radio"
+                        name="method__pay"
+                        value="bankak"
+                        checked
+                      />
+                      <label for="ban">بنكك</label>
+                    </div>
+        
+                    <img src="/img/b.png" width="77px" />
+                  </div>
+                  <div class="form__check">
+                    <div class="form__check-right">
+                      <input id="fa" type="radio" name="method__pay" value="fawrey" />
+        
+                      <label for="fa">فوري</label>
+                    </div>
+                    <img src="./img/f.png"  width="66px"/>
+                  </div>
+                  <div class="accept">
+                    <label>
+                      اوفق على الشروط والأحكام ،
+                      <span><a href=""> قراءة الشروط</a></span></label
+                    >
+                    <input type="checkbox" name="terms" />
+                  </div>
+                  <button class="submit" type="submit" onclick="return validateForm()">
+                    ادفع
+                  </button>
+                </form>
+              </div>
+            </div>            
+          </div>
+        </div>
+      </div>
+
+      <!-- Start footer -->
+      <div class="footer">
+        <div class="container">
+          <div class="content">
+            <div class="row">
+              <div class="social">
+                <div class="row">
+                  <div class="col-md-6 col-sm-6">
+                    <h2>تواصل معنا</h2>
+                    <ul>
+                      <li>
+                        <span><a href="#"><i class="fa fa-linkedin color1"></i></a></span>
+                      </li>
+                      <li>
+                        <span><a href="#"><i class="fa fa-facebook color1"></i></a></span>
+                      </li>
+                      <li>
+                        <span><a href="#"><i class="fa fa-whatsapp color1"></i></a></span>
+                      </li>                                            
+                    </ul>
+                  </div>
+                  <div class="col-md-6 col-sm-6">
+                    <div class="foo-logo">
+                      <img src="./img/LTC.png" alt="">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="footer-info">
+                <div class="row">
+                  <div class="col-md-4 col-sm-4">
+                    <p>عن لانتيرن</p>
+                    كيف تتعلم مع لانتيرن
+                 </p>                  
+                  </div>
+                  <div class="col-md-4 col-sm-4">
+                    <p>شروط الخدمة</p>
+                    <p>سياسة الإستخدام</p>                  
+                  </div>
+                  <div class="col-md-4 col-sm-4">
+                    <p>Powred by</p>
+                    <p>/Spiral Code</p>                  
+                  </div>                  
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End footer -->      
+
+    <script src="./js/jQuery v3.6.0.js"></script>
+    <script src="./js/index.js"></script>
+    <script src="./js/bootstrap/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

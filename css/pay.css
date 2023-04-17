@@ -1,0 +1,142 @@
+/* start pay page#################### */
+.pay-header .active ul li a{
+  color: #fff;
+}
+.mean-toggle{
+  color: #428CC6;
+}
+.pay .speciall--heading::before{
+  height: 5%;
+}
+.pay{
+  position: relative;
+  color: #023F7A;
+}
+.pay h4 {
+  margin: 30px 0;
+  color: var(--main-color);
+  /* font-size: 50px; */
+  font-weight: bold;
+}
+.pay__content {
+  margin: 0px auto;
+  margin-right: 170px;
+}
+.pay__content label {
+  color: var(--main-color);
+  font-size: 18px;
+  font-weight: bold;
+}
+.pay__content p {
+  color: var(--main-color);
+  font-size: 18px;
+  font-weight: bold;
+  margin: 20px 0;
+}
+.pay__content input[type="text"] {
+  width: 60%;
+  border-radius: 30px;
+  outline: none;
+  padding: 20px;
+  border: none;
+  border: 1px solid #777;
+}
+.form__check {
+  width: 60%;
+  border: 1px solid #777;
+  padding: 10px 20px;
+  margin-top: 25px;
+  border-radius: 40px;
+  display: flex;
+  justify-content: space-between;
+}
+.form__check img {
+  max-width: 100%;
+}
+.form__check input[type="radio"] {
+  margin-left: 20px;
+  margin-top: 10px;
+  width: 40px;
+  height: 40px;
+}
+.pay__content form .accept {
+  margin-top: 80px;
+  display: flex;
+}
+.pay__content form .accept label {
+  margin-left: 20px;
+}
+.pay__content form .accept label a {
+  color: var(--second-color);
+}
+.pay__content form input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+  align-items: center;
+}
+
+@media (max-width: 767px) {
+  
+  .pay .speciall--heading::before {
+    height: 4%;
+    right: 6%;
+}
+
+  .pay__content {
+    margin-right: 100px;
+  }
+
+  .pay__content input[type="text"] {
+    width: 90%;
+  }
+  .pay h4 {
+    margin: 100px 50px 100px 0px;
+  }
+  .form__check {
+    width: 90%;
+    border-radius: 40px;
+  }
+  .pay__content label {
+    font-size: 20px;
+  }
+}
+.submit {
+  outline: none;
+  border: none;
+  background-color: var(--main-color);
+  padding: 15px;
+  text-align: center;
+  color: #fff;
+  border-radius: 30px;
+  width: 190px;
+  font-size: 25px;
+  transform: translateX(-50%);
+  right: 50%;
+  margin: 50px auto;
+}
+@media (max-width: 470px) {
+  .pay__content label {
+    font-size: 16px;
+  }
+  .pay__content {
+    margin-right: 50px;
+  }
+  .pay__content form input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+    align-items: center;
+  }
+  .form__check img {
+    width: 80px;
+    object-fit: contain;
+  }
+  .form__check input[type="radio"] {
+    margin-left: 10px;
+    width: 20px;
+    height: 20px;
+  }
+
+  .form__check-right{
+    margin-top: 10px;
+  }
+}
