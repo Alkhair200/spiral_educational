@@ -1,3 +1,18 @@
+
+@font-face {
+    font-family: fontName1;
+    src:url('../font/ArbFONTS-Tajawal-Regular-1.ttf');
+}
+
+@font-face {
+    font-family: fontName2;
+    src:url('../font/ArbFONTS-Tajawal-Bold-1.ttf');
+}
+
+@font-face {
+    font-family: fontName3;
+    src:url('../font/ArbFONTS-Tajawal-Medium.ttf');
+}
 body{
     margin: 0;
     padding: 0;
@@ -9,6 +24,10 @@ body{
     background-position:center;
     box-sizing: border-box;
 }
+
+/* body, h1, h2, h3, h4, h5, h6 {
+    font-family: "fontName3";
+} */
 
 * {
     -webkit-box-sizing: border-box;
@@ -224,6 +243,13 @@ nav.active {
 
   }
 
+  .slider-text p{
+    width: 76%;
+    padding: 0 20px;
+    font-size: 20px;
+    text-align: justify;    
+  }
+
   .slide-btn{
     position: relative;
     width: 100%;
@@ -353,7 +379,10 @@ nav.active {
     .next_btn {
       right: 50px;
     }
-  }     
+    
+  }  
+  
+
 
   
 .slider{
@@ -363,11 +392,7 @@ padding: 10px 0;
     color: #023F7A
 }
 
-.slider-text p{
-    font-size: 21px;
-    padding: 10px;
-    margin-left: 21%;
-} */
+
 
 .slider-text button{
     width: 30%;
@@ -478,7 +503,7 @@ height: 700px;
 .slick-slider .slick-next {
     /* right: -30px; */
     font-size: 0;
-    background: linear-gradient(to right, rgba(116, 175, 238, 0), #FFEA20);
+    background: linear-gradienz(to right, rgba(116, 175, 238, 0), #FFEA20);
 }
 
 .slick-slider .slick-next::after {
