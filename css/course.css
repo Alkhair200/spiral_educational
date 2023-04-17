@@ -32,7 +32,7 @@
 
 /* Start cours head */
 
-.header{
+.courses-head .header{
   z-index: 99;
   margin: 0;
 }
