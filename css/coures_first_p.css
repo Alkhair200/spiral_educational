@@ -1,0 +1,56 @@
+:root {
+    --main-color: #023f7a;
+    --second-color: #2977c4;
+    --light-yellow: #ffea20;
+    --dark-yellow: #ffb600;
+    --white-color: #fff;
+    --section-padding: 100px;
+  }
+
+  .first-course .speciall--heading::before{
+    right: 10px;
+    background-color: var(--light-yellow);
+  }
+
+  .course-content1,
+  .course-content2
+  {
+    border-radius: 30px;
+    overflow: hidden;
+    height: 70%;
+  }
+
+.course-content1 img{
+    width: 100%;
+}
+
+.course-content2{
+    background: #023F7A;
+    padding: 50px;
+    text-align: center;
+}
+
+.course-content2 h2{
+    color: var(--light-yellow);
+}
+
+.course-content2 p{
+    color: var(--white-color);
+    font-size: 18px;
+    text-align: justify;
+    padding: 0 10px;
+}
+
+.title1,.title2{
+    position: relative;
+    color: var(--main-color);
+    padding: 0 30px;
+}
+
+.title1{
+    margin: 60px 0;
+}
+
+.title2 {
+    top: -50px;
+}
