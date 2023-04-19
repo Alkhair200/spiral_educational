@@ -7,6 +7,10 @@
     --section-padding: 100px;
   }
 
+  a{
+    text-decoration: none;
+  }
+
   .margin-top{
     margin-top: 5%;
   }
@@ -248,6 +252,52 @@
     margin-bottom: 20px;
 }
 
+.courese-content3 .btn{
+    display: block;
+    width: 100%;
+    text-align: right; 
+    font-size: 18px;
+    color: var(--main-color);
+    
+}
+
+.courese-content3 .btn i{
+    font-size: 25px;
+}
+
+.courese-content3 .btn:focus{
+    box-shadow: none;
+}
+
+.courese-content3 ul{
+    list-style: none;
+    color: var(--main-color);
+    padding-left: 0;
+}
+
+.courese-content3 ul li{
+    padding: 3px;
+    background: #ececec;
+    border-radius: 30px;
+    margin-bottom: 10px;
+}
+
+.courese-content3 ul li i{
+    font-size: 35px;
+}
+
+.courese-content3 .card-body ul{
+    list-style: none;
+    padding: 0 20px;
+}
+
+.pagination li a{
+    color: var(--main-color);
+}
+
+.pagination li a:focus{
+    box-shadow: none;
+}
 
 
 
