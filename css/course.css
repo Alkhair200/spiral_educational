@@ -67,6 +67,7 @@
   position: relative;
   width: 70%;
   margin: auto;
+  padding: 80px 30px;
 }
 
 .level-of-pro h2{
@@ -74,19 +75,26 @@
   font-weight: bold;
 }
 
-.speciall--heading-comments::before {
+.speciall--heading-pro::before {
   position: absolute;
   content: "";
   top: 28%;
-  right: 3%;
+  right: 1%;
   background-color: var(--light-yellow);
   border-radius: 30px;
   width: 4px;
-  height: 18%;
+  height: 17%;
 }
 
-.level-of-pro{
-  padding: 80px 50px;
+.speciall--heading-comments::before{
+  position: absolute;
+  content: "";
+  top: 0;
+  right: 1%;
+  background-color: var(--light-yellow);
+  border-radius: 30px;
+  width: 4px;
+  height: 10%;
 }
 
 
@@ -187,6 +195,9 @@
   padding: 15px;
 }
 
+.course .title3 h2{
+  font-weight: bold;
+}
 
 .course .title3 .speciall--heading::before{
   height: 10%;

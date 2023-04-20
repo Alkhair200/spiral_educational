@@ -151,7 +151,7 @@
 
 
 @media only screen and (max-width: 767px) {
-    .title1,.title2,.title3,.related-coures{
+    .title1,.title2,.title3,.related-coures,.level-of-pro,.progress__box{
         width: 100%;
     }
 
@@ -185,6 +185,14 @@
 
     .first-course .about-course p, .first-course .about-course ul{
         font-size: 16px;
+    }
+
+    .speciall--heading-comments::before{
+        height: 8%;
+    } 
+    
+    .course .course--heading .span1::after{
+        right: 27%;
     }
 }
 
