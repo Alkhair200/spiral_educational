@@ -502,7 +502,7 @@ height: 700px;
 .slick-slider .slick-next {
     /* right: -30px; */
     font-size: 0;
-    background: linear-gradienz(to right, rgba(116, 175, 238, 0), #FFEA20);
+    background: linear-gradient(to right, rgba(116, 175, 238, 0), #FFEA20) ;
 }
 
 .slick-slider .slick-next::after {
