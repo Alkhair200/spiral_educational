@@ -1,0 +1,312 @@
+/* <!-- start profile page --> */
+
+/*start  variable*/
+:root {
+  --main-color: #023f7a;
+  --second-color: #2977c4;
+  --light-yellow: #ffea20;
+  --dark-yellow: #ffb600;
+  --section-padding: 100px;
+}
+a {
+  text-decoration: none;
+}
+/* start global rules*/
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+body {
+  font-family: "Open Sans", sans-serif;
+  direction: rtl;
+  text-align: right;
+}
+html {
+  scroll-behavior: smooth;
+}
+.padding-top {
+  padding-top: 20px;
+}
+ul {
+  list-style: none;
+}
+.courses {
+  margin-top: 60px;
+  display: flex;
+  justify-content: space-between;
+  overflow: revert !important;
+}
+.courses .coururses__course {
+  width: 70%;
+}
+.coururses__course .heading {
+  position: relative;
+  font-size: 40px;
+  color: var(--main-color);
+  margin-right: 20px;
+}
+.coururses__course .heading::before {
+  position: absolute;
+  content: "";
+  background-color: var(--light-yellow);
+  height: 70%;
+  width: 3px;
+  right: -20px;
+  bottom: 11px;
+}
+
+.coururses__course .course--box{
+  position: relative;
+}
+
+.coururses__course .bg{
+  position: absolute;
+  background: #3333337a;
+  width: 100%;
+  height: 100%;  
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+.coururses__course .course__boxex,
+.course__sugested {
+  display: flex;
+  gap: 7.25%;
+  margin-top: 10px;
+}
+.coururses__course .heading:last-of-type {
+  margin-top: 80px;
+}
+.coururses__course .course__boxex .course--box,
+.course__sugested .course--box {
+  width: 25%;
+  transition: 0.4s;
+  height: 200px;
+}
+.coururses__course .course__boxex .course--box {
+  position: relative;
+}
+.coururses__course .course__boxex .course--box::after {
+  position: absolute;
+  content: "";
+  top: 50%;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  font-size: 30px;
+  color: #fff;
+}
+.coururses__course .course__boxex .course--box:nth-of-type(2)::after {
+  content: "5%";
+}
+.coururses__course .course__boxex .course--box:last-of-type::after {
+  content: "90%";
+}
+.coururses__course .course__boxex .course--box:first-of-type::after {
+  content: "66%";
+}
+.coururses__course .course__boxex .course--box:hover p,
+.course__sugested .course--box:hover p {
+  background-color: var(--second-color);
+}
+
+.course__sugested {
+  margin-top: 10px;
+}
+
+.courses .coururses__course img {
+  max-width: 100%;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  height: 100%;
+  object-fit: cover;
+}
+.course--box p {
+  background-color: var(--main-color);
+  margin-top: -5px;
+  padding: 10px 0;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  text-align: center;
+  color: #fff;
+  font-size: 25px;
+}
+.courses .coursese-profile {
+  width: 30%;
+  border-radius: 1px solid #fff;
+  background-color: var(--main-color);
+  margin-left: 5.2%;
+  border-radius: 30px;
+  /* height: 470px; */
+}
+.courses .coursese-profile img {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin: 40px auto 30px auto;
+  width: 120px;
+}
+.courses .coursese-profile p {
+  text-align: center;
+  margin: 0px auto;
+  color: #fff;
+  font-size: 25px;
+}
+.courses .coursese-profile p a {
+  color: #777;
+}
+.courses .coursese-profile ul {
+  display: flex;
+  flex-direction: column;
+
+  margin-top: 40px;
+}
+.courses .coursese-profile ul li a {
+  color: #fff;
+  display: block;
+  margin-top: 15px;
+  padding-right: 30%;
+  font-size: 25px;
+  padding-top: 10px;
+  border-top: 1px solid #fff;
+  position: relative;
+}
+.courses .coursese-profile ul li a::before {
+  position: absolute;
+  content: "";
+  border-color: transparent var(--light-yellow) transparent transparent;
+  border-width: 10px;
+  border-style: solid;
+  right: 24%;
+  top: 39%;
+}
+/* start mediaquries */
+@media (max-width: 1035px) {
+  .course--box p {
+    font-size: 20px;
+  }
+}
+@media (max-width: 900px) {
+  .course--box p {
+    font-size: 15px;
+  }
+  .courses .coursese-profile ul li a {
+    font-size: 15px;
+  }
+  .courses .coursese-profile p {
+    font-size: 20px;
+  }
+  .courses .coursese-profile img {
+    width: 90px;
+  }
+}
+@media (max-width: 800px) {
+  .courses {
+    flex-direction: column;
+  }
+  .courses .coursese-profile img {
+    width: 150px;
+  }
+  .courses .coursese-profile {
+    width: 100%;
+    border: 0;
+    background-color: transparent;
+    margin-left: 0;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    margin-bottom: 70px;
+  }
+  .profile__box {
+    width: 60%;
+    padding-bottom: 30px;
+    background-color: var(--main-color);
+    border-radius: 50px;
+  }
+  .courses .coursese-profile p {
+    font-size: 30px;
+  }
+  .courses .coursese-profile ul {
+    width: 40%;
+    margin-top: 0;
+    padding: 30px 0;
+    background-color: var(--main-color);
+    border-top-left-radius: 40px;
+    border-bottom-left-radius: 40px;
+  }
+  .courses .coursese-profile ul li a {
+    border: none;
+  }
+  .courses .coururses__course {
+    width: 100%;
+  }
+
+  .coururses__course .heading {
+    font-size: 35px;
+
+    margin-right: 20%;
+  }
+  .coururses__course .course__boxex,
+  .course__sugested {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 0;
+    margin-top: 20px;
+  }
+  .courses .coursese-profile ul li a {
+    padding-right: 30px;
+  }
+  .courses .coursese-profile ul li a::before {
+    right: 10px;
+  }
+}
+@media (max-width: 560px) {
+  .coururses__course .course__boxex,
+  .course__sugested {
+    flex-direction: column;
+  }
+  .coururses__course .course__boxex .course--box,
+  .course__sugested .course--box {
+    width: 100%;
+    text-align: center;
+    margin: 20px auto;
+  }
+  .courses .coururses__course img {
+    width: 250px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    height: 80%;
+  }
+  .course--box p {
+    width: 250px;
+
+    text-align: center;
+    margin: -4px auto 0px auto;
+  }
+  .coururses__course .heading {
+    margin-right: 17%;
+  }
+  .courses .coursese-profile p {
+    font-size: 20px;
+  }
+}
+
+.footer{
+  margin-top: 10%;
+}
+
+.mean-toggle{
+  color: var(--main-color) !important;
+}
+
+.active  ul li a{
+  color: #fff;
+}
+
+@media only screen and (max-width: 560px) {
+.coururses__course .bg{
+  display: none;
+}
+}
+/* <!-- end profile page --> */
