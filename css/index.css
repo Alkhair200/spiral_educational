@@ -836,6 +836,11 @@ color: #fff;
     .slick-dots{
         display: block !important;
     }
+
+    .slick-current .card{
+        border: 4px solid #023F7A;
+      }
+        
   }  
 
 
