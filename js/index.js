@@ -130,4 +130,24 @@ $('.slider-cat').slick({
   }]
 });
 // ================= categories slider ================//
+
+
+$('.border-right').hover(function() {
+  $(this).find('span').eq(0).animate({
+  
+      width: '100%'
+  
+  }, 300);
+  
+  }, function() {
+  
+  $(this).find('span').eq(0).animate({
+  
+      width: 0
+  
+  }, 300)
+  
+  }); 
+
+  
 })
